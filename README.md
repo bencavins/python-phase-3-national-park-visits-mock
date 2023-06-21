@@ -73,8 +73,6 @@ build out any helper methods if needed.
   - NationalParks should be initialized with a name, as a string
 - `NationalPark property name`
   - Returns the NationalPark's name
-  - Should not be able to change after the NationalPark is created
-  - hint: hasattr()
 
 #### Trip
 
@@ -94,20 +92,12 @@ build out any helper methods if needed.
 
 #### Visitors
 
-- `Visitor trips()`
-  - Returns a list of all trips for that visitor
-  - The list of trips must contain type `Trip`
-- `Visitor nationalparks()`
-  - Returns a **unique** list of all parks who that visitor has visited.
+- `Visitor get_parks()`
   - The list of national parks must contain type `NationalPark` 
 
 #### NationalPark
 
-- `NationalPark trips()`
-  - Returns a list of all trips planned for this national park
-  - The list of trips must contain type `trip`
-- `NationalPark visitors()`
-  - Returns a **unique** list of all visitors a national park has recieved
+- `NationalPark get_visitors()`
   - The list of visitors must contain type `Visitor`
 
 ### Aggregate and Association Methods
@@ -120,7 +110,7 @@ build out any helper methods if needed.
 
 #### National Park
 
-- `NationalPark total_visits()`
+- `NationalPark total_trips()`
   - Returns the total number of times that park has been visited
 - `NationalPark best_visitor()`
-  - Returns the Visitor 
+  - Returns the Visitor who visited the most times
